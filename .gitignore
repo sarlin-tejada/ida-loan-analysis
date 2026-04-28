@@ -1,0 +1,14 @@
+# Environment — never commit real credentials
+.env
+
+# Data — too large for git; see docs/data_sources.md for download instructions
+data/raw/
+data/interim/
+data/processed/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/

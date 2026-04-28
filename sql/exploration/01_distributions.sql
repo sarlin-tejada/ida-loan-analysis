@@ -1,0 +1,9 @@
+-- 01_distributions.sql
+-- Purpose: Initial distributions to understand shape of data before analysis.
+-- Run early in exploration — before committing to any analytical angle.
+--
+-- Suggested starting queries:
+--   - Row counts and date ranges
+--   - Nulls and missing values per column
+--   - Key field distributions (amounts, statuses, regions, years)
+--   - Obvious anomalies (zeros, negatives, outliers)

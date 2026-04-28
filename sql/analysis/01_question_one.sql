@@ -1,0 +1,7 @@
+-- 01_question_one.sql
+-- Analytical question: [State the question this query answers]
+-- Hypothesis: [What do you expect to find?]
+-- Result: [Fill in after running]
+--
+-- Rename this file to reflect the actual question.
+-- Example: 01_cancellation_rate_by_region.sql

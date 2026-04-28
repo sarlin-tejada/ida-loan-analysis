@@ -1,0 +1,11 @@
+-- 01_create_tables.sql
+-- Define your raw data tables here.
+-- Run this after the Docker container is up and you're logged in as root or analyst.
+--
+-- Example:
+-- CREATE TABLE IF NOT EXISTS raw_data (
+--     id            INT AUTO_INCREMENT PRIMARY KEY,
+--     column_one    VARCHAR(255),
+--     column_two    DECIMAL(18,2),
+--     created_date  DATE
+-- );
