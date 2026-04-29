@@ -53,15 +53,15 @@ Write-Host ""
 Write-Host "  2. Verify the container is running:" -ForegroundColor White
 Write-Host "     docker ps" -ForegroundColor Yellow
 Write-Host ""
-Write-Host "  3. Log into MySQL as root:" -ForegroundColor White
-Write-Host "     docker exec -it ${projectName}_db mysql -u root -p" -ForegroundColor Yellow
+Write-Host "  3. Connect via MySQL Workbench:" -ForegroundColor White
+Write-Host "     Host: 127.0.0.1 | Port: as set in .env | User: root" -ForegroundColor Yellow
 Write-Host ""
-Write-Host "  4. Create analyst user (see README for SQL):" -ForegroundColor White
-Write-Host "     sql/schema/02_create_analyst_user.sql" -ForegroundColor Yellow
+Write-Host "  4. Create tables in Workbench:" -ForegroundColor White
+Write-Host "     Open and execute sql/schema/01_create_tables.sql" -ForegroundColor Yellow
 Write-Host ""
-Write-Host "  5. Add your raw data to data/raw/" -ForegroundColor White
+Write-Host "  5. Create analyst user in Workbench:" -ForegroundColor White
+Write-Host "     Open and execute sql/schema/02_create_analyst_user.sql" -ForegroundColor Yellow
+Write-Host ""
+Write-Host "  6. Add your raw data to data/raw/" -ForegroundColor White
 Write-Host "     Update docs/data_sources.md with download details" -ForegroundColor Yellow
-Write-Host ""
-Write-Host "  6. Create your tables:" -ForegroundColor White
-Write-Host "     sql/schema/01_create_tables.sql" -ForegroundColor Yellow
 Write-Host ""

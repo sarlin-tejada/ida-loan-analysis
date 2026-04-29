@@ -9,6 +9,3 @@ GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, INDEX, ALTER
     TO 'analyst'@'%';
 
 FLUSH PRIVILEGES;
-
--- Verify
-SELECT user, host FROM mysql.user WHERE user = 'analyst';

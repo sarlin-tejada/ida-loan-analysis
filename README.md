@@ -35,16 +35,20 @@ docker ps   # confirm container is running
 
 ### 3. Create tables and analyst user
 
-Log in as root:
-```bash
-docker exec -it <project_name>_db mysql -u root -p
-```
+Open MySQL Workbench and create a new connection:
+- Host: `127.0.0.1`
+- Port: as set in `.env`
+- User: `root`
+- Password: as set during setup
+
+Verify the database exists:
+- Expand the schema panel and confirm `<database_name>` appears
 
 Then run in order:
-```
-sql/schema/01_create_tables.sql
-sql/schema/02_create_analyst_user.sql
-```
+1. Open and execute `sql/schema/01_create_tables.sql`
+2. Verify the table was created — refresh schemas and confirm table appears
+3. Open and execute `sql/schema/02_create_analyst_user.sql`
+4. Verify analyst user — run `SELECT user, host FROM mysql.user WHERE user = 'analyst';`
 
 ### 4. Add raw data
 
@@ -56,8 +60,9 @@ Place files in `data/raw/`.
 
 Use MySQL Workbench Table Data Import Wizard, or `LOAD DATA LOCAL INFILE` with `--local-infile=1` enabled (already set in docker-compose).
 
-### 6. Connect MySQL Workbench
+### 6. Create a new connection using analyst credentials
 
+Open MySQL Workbench and create a new connection:
 - Host: `127.0.0.1`
 - Port: as set in `.env`
 - User: `analyst`
