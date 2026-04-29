@@ -5,7 +5,7 @@
 CREATE USER IF NOT EXISTS 'analyst'@'%' IDENTIFIED BY 'analyst_password';
 
 GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, INDEX, ALTER
-    ON `your_database_name`.*
+    ON `ida_loan_analysis`.*
     TO 'analyst'@'%';
 
 FLUSH PRIVILEGES;
