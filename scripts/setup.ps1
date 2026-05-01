@@ -65,3 +65,6 @@ Write-Host ""
 Write-Host "  6. Add your raw data to data/raw/" -ForegroundColor White
 Write-Host "     Update docs/data_sources.md with download details" -ForegroundColor Yellow
 Write-Host ""
+Write-Host "  7. Import raw data in Workbench:" -ForegroundColor White
+Write-Host "     Update file path in sql/schema/03_import_data.sql then execute" -ForegroundColor Yellow
+Write-Host ""

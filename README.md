@@ -58,7 +58,14 @@ Place files in `data/raw/`.
 
 ### 5. Import data
 
-Use MySQL Workbench Table Data Import Wizard, or `LOAD DATA LOCAL INFILE` with `--local-infile=1` enabled (already set in docker-compose).
+Update the file path in `sql/schema/03_import_data.sql` to match your local `data/raw/` directory.
+
+Open and execute `sql/schema/03_import_data.sql` in Workbench as root.
+
+Verify the import:
+- Run `SELECT COUNT(*) FROM <table_name>;` and confirm row count matches expected total.
+
+Note: If import returns 0 rows, check `LINES TERMINATED BY` in the script — try `'\r\n'` if `'\n'` doesn't work.
 
 ### 6. Create a new connection using analyst credentials
 
