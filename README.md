@@ -10,6 +10,53 @@
 
 ---
 
+## Data Sources
+
+See [`docs/data_sources.md`](docs/data_sources.md).
+
+---
+
+## Analysis
+
+[Document your key questions and findings here as you work through them.]
+
+### Question 1: [Question]
+- **Hypothesis:**
+- **Query:** `sql/analysis/01_...sql`
+- **Finding:**
+
+### Question 2: [Question]
+- **Hypothesis:**
+- **Query:** `sql/analysis/02_...sql`
+- **Finding:**
+
+## Key Findings
+
+1.
+2.
+3.
+
+---
+
+## Project Structure
+
+```
+├── data/
+│   ├── raw/          # Source files — never modified (gitignored)
+│   ├── interim/      # Mid-processing outputs (gitignored)
+│   └── processed/    # Final outputs for Tableau (gitignored)
+├── sql/
+│   ├── schema/       # DDL — table definitions, user setup
+│   ├── exploration/  # Numbered scratch queries
+│   └── analysis/     # Final numbered queries by question
+├── docs/             # Data dictionary, notes, data sources
+├── scripts/
+│   └── setup.ps1     # Project setup script
+├── docker-compose.yml
+├── .env.example
+└── .gitignore
+```
+
 ## Setup
 
 ### Prerequisites
@@ -75,53 +122,3 @@ Open MySQL Workbench and create a new connection:
 - User: `analyst`
 - Password: as set during setup
 
----
-
-## Project Structure
-
-```
-├── data/
-│   ├── raw/          # Source files — never modified (gitignored)
-│   ├── interim/      # Mid-processing outputs (gitignored)
-│   └── processed/    # Final outputs for Tableau (gitignored)
-├── sql/
-│   ├── schema/       # DDL — table definitions, user setup
-│   ├── exploration/  # Numbered scratch queries
-│   └── analysis/     # Final numbered queries by question
-├── docs/             # Data dictionary, notes, data sources
-├── scripts/
-│   └── setup.ps1     # Project setup script
-├── docker-compose.yml
-├── .env.example
-└── .gitignore
-```
-
----
-
-## Analysis
-
-[Document your key questions and findings here as you work through them.]
-
-### Question 1: [Question]
-- **Hypothesis:**
-- **Query:** `sql/analysis/01_...sql`
-- **Finding:**
-
-### Question 2: [Question]
-- **Hypothesis:**
-- **Query:** `sql/analysis/02_...sql`
-- **Finding:**
-
----
-
-## Key Findings
-
-1.
-2.
-3.
-
----
-
-## Data Sources
-
-See [`docs/data_sources.md`](docs/data_sources.md).
