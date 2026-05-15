@@ -1,4 +1,4 @@
-# [Project Title]
+# IDA World Bank Loan Analysis
 
 > One sentence describing what this project analyzes and why it's interesting.
 
